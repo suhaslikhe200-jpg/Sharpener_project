@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Tracker</title>
+   <link  rel="styleSheet" href="style.css">
 </head>
 <body>
-    
+<h1>Expense Tracker</h1>
+  <lable form="expense">Expense Details</lable>
+  <hr>
+  <form id="expense" >
+     
+    <lable for="amount">Choose expenseamount:</lable>
+    <input type="number" id="amount" class="pirce" name="amount" step="1" min="0" placeholder="00"><br><br>
+    <lable for="desc">Choose description:</lable>
+    <input type="text" id="desc" class="deseQ" name="desc" maxlength="50"><br><br>
+   <label for="options">Choose an category:</label>
+<select id="options"  class="optionsT" name="options">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
+<br><br>
+    <label><button type="submit" class="submit" id="addValue">Add Expense</button></label>
+ 
+  </form>
+  
+    <ul id="unorderedList" class="listofDetail"></ul>
+
+  
+
+  
+  
+<script src="script.js"></script>
 </body>
 </html>
